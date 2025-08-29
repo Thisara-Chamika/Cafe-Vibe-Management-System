@@ -1,11 +1,13 @@
 package Controller;
 
+import DataBase.DBConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -39,7 +41,13 @@ public class ViewAllCustomerTable {
 
     @FXML
     void btnReloadTableOnAction(ActionEvent event) {
+        colCustomerId.setCellValueFactory(new PropertyValueFactory<>("customerId"));
+        colCustomerName.setCellValueFactory(new PropertyValueFactory<>("customerName"));
+        colCustomerAddress.setCellValueFactory(new PropertyValueFactory<>("customerAddress"));
+        colCustomerNumber.setCellValueFactory(new PropertyValueFactory<>("customerNumber"));
+        colCustomerEmail.setCellValueFactory(new PropertyValueFactory<>("customerEmail"));
 
+        tblCustomers.setItems(DBConnection.customerObservableList);
     }
 
 }

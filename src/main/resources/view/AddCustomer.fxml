@@ -9,9 +9,10 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="515.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
+<AnchorPane prefHeight="562.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a36347" height="55.0" layoutX="336.0" layoutY="494.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a36347" height="55.0" layoutX="276.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="311.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#793c20" height="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="601.0" />
       <Label layoutX="135.0" layoutY="6.0" text="Add Customer Form" textFill="#ffe8de">
          <font>
@@ -28,7 +29,7 @@
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtMobileNumber" layoutX="29.0" layoutY="211.0" promptText="Customer Number...">
+      <TextField fx:id="txtMobileNumber" layoutX="90.0" layoutY="211.0" promptText="Customer Number...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
@@ -39,7 +40,7 @@
          </font>
       </Label>
       <Label layoutX="201.0" layoutY="83.0" />
-      <Label layoutX="30.0" layoutY="185.0" text="Mobile Number">
+      <Label layoutX="91.0" layoutY="185.0" text="Mobile Number">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
@@ -54,7 +55,7 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="215.0" layoutY="183.0" text="Email">
+      <Label layoutX="276.0" layoutY="183.0" text="Email">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
@@ -64,7 +65,7 @@
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtCustomerEmail" layoutX="215.0" layoutY="209.0" prefHeight="25.0" prefWidth="211.0" promptText="Customer Email...">
+      <TextField fx:id="txtCustomerEmail" layoutX="276.0" layoutY="209.0" prefHeight="25.0" prefWidth="211.0" promptText="Customer Email...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
@@ -74,70 +75,80 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="279.0" text="Order Details" textFill="#a13c0d" underline="true">
+      <Label layoutX="27.0" layoutY="335.0" text="Order Details" textFill="#a13c0d" underline="true">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtOrderId" layoutX="183.0" layoutY="335.0" prefHeight="25.0" prefWidth="99.0" promptText="Order Id...">
+      <TextField fx:id="txtOrderId" layoutX="183.0" layoutY="391.0" prefHeight="25.0" prefWidth="99.0" promptText="Order Id...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <Label layoutX="183.0" layoutY="311.0" text=" Order ID">
+      <Label layoutX="183.0" layoutY="367.0" text=" Order ID">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="txtCategoryCombo" layoutX="345.0" layoutY="333.0" opacity="0.44" prefWidth="150.0" promptText="Select a Category" />
-      <Label layoutX="346.0" layoutY="309.0" text="Category">
+      <ComboBox fx:id="txtCategoryCombo" layoutX="345.0" layoutY="389.0" opacity="0.44" prefWidth="150.0" promptText="Select a Category" />
+      <Label layoutX="346.0" layoutY="365.0" text="Category">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="29.0" layoutY="376.0" text="Items">
+      <Label layoutX="29.0" layoutY="432.0" text="Items">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="txtItemCombo" layoutX="29.0" layoutY="400.0" opacity="0.44" prefHeight="25.0" prefWidth="211.0" promptText="Select a Item" />
-      <Line endX="465.0" fill="#7a300d" layoutX="135.0" layoutY="265.0" startX="-135.0" />
-      <Button layoutX="466.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnAddCustomerOnAction" text="Add Customer">
+      <ComboBox fx:id="txtItemCombo" layoutX="29.0" layoutY="456.0" opacity="0.44" prefHeight="25.0" prefWidth="211.0" promptText="Select a Item" />
+      <Line endX="465.0" fill="#7a300d" layoutX="135.0" layoutY="319.0" startX="-135.0" />
+      <Button layoutX="288.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnAddCustomerOnAction" text="Add Customer">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <TextField fx:id="txtCustomerIdforOrder" layoutX="27.0" layoutY="336.0" prefHeight="25.0" prefWidth="99.0" promptText="Customer Id...">
+      <TextField fx:id="txtCustomerIdforOrder" layoutX="27.0" layoutY="392.0" prefHeight="25.0" prefWidth="99.0" promptText="Customer Id...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <Label layoutX="27.0" layoutY="312.0" text="Customer ID">
+      <Label layoutX="27.0" layoutY="368.0" text="Customer ID">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="274.0" layoutY="376.0" text="Quantity">
+      <Label layoutX="274.0" layoutY="432.0" text="Quantity">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtQty" layoutX="272.0" layoutY="400.0" prefHeight="25.0" prefWidth="81.0" promptText="Qty...">
+      <TextField fx:id="txtQty" layoutX="272.0" layoutY="456.0" prefHeight="25.0" prefWidth="81.0" promptText="Qty...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <Label layoutX="402.0" layoutY="375.0" text="Unit Price">
+      <Label layoutX="402.0" layoutY="431.0" text="Unit Price">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtUnitPrice" layoutX="400.0" layoutY="398.0" prefHeight="25.0" prefWidth="99.0" promptText="Unit Price...">
+      <TextField fx:id="txtUnitPrice" layoutX="400.0" layoutY="454.0" prefHeight="25.0" prefWidth="99.0" promptText="Unit Price...">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <Button layoutX="466.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" text="Place Order">
+      <Button layoutX="352.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" text="Place Order">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnViewAllCustomersOnAction" text="View All Customers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="479.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnHomePageOnAction" text="Home Page">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

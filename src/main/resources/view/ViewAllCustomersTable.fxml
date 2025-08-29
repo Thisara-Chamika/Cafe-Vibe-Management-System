@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewAllCustomerTable">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#80330f" height="47.0" layoutX="349.0" layoutY="335.0" opacity="0.72" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="238.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7a300d" height="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="601.0" />
+      <Label layoutX="129.0" layoutY="10.0" text="View All Customers Form" textFill="#e2d0c7">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" layoutX="15.0" layoutY="91.0" prefHeight="237.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="77.99999809265137" text="Customer ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="128.66666412353516" text="Customer Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="122.66667175292969" text="Customer Address" />
+            <TableColumn fx:id="colCustomerNumber" prefWidth="119.33332061767578" text="Customer Number" />
+            <TableColumn fx:id="colCustomerEmail" prefWidth="123.999989827474" text="Customer Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="461.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnReloadTableOnAction" text="Reload Table">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="378.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

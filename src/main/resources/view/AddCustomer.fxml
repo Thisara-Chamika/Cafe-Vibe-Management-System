@@ -9,10 +9,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="562.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
+<AnchorPane prefHeight="579.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a36347" height="55.0" layoutX="336.0" layoutY="494.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a36347" height="55.0" layoutX="276.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="311.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e1" height="48.0" layoutX="27.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e1" height="48.0" layoutX="302.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="277.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e0" height="48.0" layoutX="273.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="318.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#793c20" height="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="601.0" />
       <Label layoutX="135.0" layoutY="6.0" text="Add Customer Form" textFill="#ffe8de">
          <font>
@@ -138,7 +139,7 @@
             <Font name="System Italic" size="12.0" />
          </font>
       </TextField>
-      <Button layoutX="352.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" text="Place Order">
+      <Button layoutX="317.0" layoutY="519.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" text="Place Order">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -148,7 +149,12 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="479.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnHomePageOnAction" text="Home Page">
+      <Button layoutX="43.0" layoutY="519.0" mnemonicParsing="false" onAction="#btnHomePageOnAction" text="Home Page">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="445.0" layoutY="518.0" mnemonicParsing="false" onAction="#btnViewAllOedersOnAction" text="View All Orders">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

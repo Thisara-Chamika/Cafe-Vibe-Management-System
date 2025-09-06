@@ -85,6 +85,13 @@ public class AddCustomerFormController {
         stage.show();
     }
 
+    // -------------- View All Orders Table --------------
+    public void btnViewAllOedersOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ViewAllOrders.fxml"))));
+        stage.show();
+    }
+
 // -------------- reset text fields --------------
     public void resetTextFields(){
                 txtCustomerId.setText("");

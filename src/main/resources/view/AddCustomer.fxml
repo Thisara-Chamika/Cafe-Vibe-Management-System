@@ -9,13 +9,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="579.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
+<AnchorPane prefHeight="579.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e1" height="48.0" layoutX="27.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e1" height="48.0" layoutX="302.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="277.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e0" height="48.0" layoutX="302.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="277.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247e0" height="48.0" layoutX="273.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="318.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#793c20" height="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="601.0" />
-      <Label layoutX="135.0" layoutY="6.0" text="Add Customer Form" textFill="#ffe8de">
+      <Label layoutX="176.0" layoutY="6.0" text="Customer Form" textFill="#ffe8de">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>

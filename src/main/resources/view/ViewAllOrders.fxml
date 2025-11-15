@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.ViewAllOrdersFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="381.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewAllOrdersFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16247" height="44.0" layoutX="414.0" layoutY="314.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="243.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#793c20" height="67.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="671.0" />
+      <Label layoutX="200.0" layoutY="6.0" text="All Orders Form" textFill="#ffe8de">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblViewAllOrdersTable" layoutX="17.0" layoutY="97.0" prefHeight="203.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="75.0" text="Order ID" />
+          <TableColumn fx:id="colCustomerId" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="colCategoryName" prefWidth="123.33332824707031" text="Category" />
+            <TableColumn fx:id="colItems" prefWidth="214.6666259765625" text="Items" />
+            <TableColumn fx:id="colQuantity" prefWidth="67.33328247070312" text="Quantity" />
+            <TableColumn fx:id="colTotalPrice" prefWidth="83.33331298828125" text="Total Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="542.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnReloadTableOnAction" text="Reload Table">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="429.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnHomePageOnAction" text="Home Page">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

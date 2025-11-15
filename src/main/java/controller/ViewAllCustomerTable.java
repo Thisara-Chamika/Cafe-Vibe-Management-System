@@ -1,6 +1,5 @@
-package Controller;
+package controller;
 
-import DataBase.DBConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class ViewAllCustomerTable {
 
@@ -40,14 +40,13 @@ public class ViewAllCustomerTable {
     }
 
     @FXML
-    void btnReloadTableOnAction(ActionEvent event) {
+    void btnReloadTableOnAction(ActionEvent event) throws SQLException {
         colCustomerId.setCellValueFactory(new PropertyValueFactory<>("customerId"));
         colCustomerName.setCellValueFactory(new PropertyValueFactory<>("customerName"));
         colCustomerAddress.setCellValueFactory(new PropertyValueFactory<>("customerAddress"));
         colCustomerNumber.setCellValueFactory(new PropertyValueFactory<>("customerNumber"));
         colCustomerEmail.setCellValueFactory(new PropertyValueFactory<>("customerEmail"));
 
-        tblCustomers.setItems(DBConnection.customerObservableList);
     }
 
 }

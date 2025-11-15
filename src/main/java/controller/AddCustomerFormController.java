@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import DataBase.DBConnection;
+import dataBase.DBConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import model.Customer;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class AddCustomerFormController {
 
@@ -49,7 +50,7 @@ public class AddCustomerFormController {
 
 // ------------ Add Customer -----------------
     @FXML
-    void btnAddCustomerOnAction(ActionEvent event) {
+    void btnAddCustomerOnAction(ActionEvent event) throws SQLException {
         Customer customer = new Customer(
                 txtCustomerId.getText(),
                 txtCustomerName.getText(),
@@ -58,8 +59,7 @@ public class AddCustomerFormController {
                 txtCustomerEmail.getText()
         );
 
-        DBConnection.customerObservableList.add(customer);
-        System.out.println(customer);
+        DBConnection.getInstance().getConnection();
         resetTextFields();
     }
 

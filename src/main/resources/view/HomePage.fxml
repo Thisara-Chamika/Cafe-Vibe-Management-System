@@ -49,6 +49,22 @@
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7d482f" height="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="598.0" />
             <AnchorPane fx:id="FormViewPane" layoutX="-2.0" layoutY="86.0" prefHeight="520.0" prefWidth="600.0" />
+            <Label fx:id="lblDate" layoutX="496.0" layoutY="17.0" text="dd/MM/yyyy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="502.0" layoutY="43.0" text="00:00:00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8765e" height="44.0" layoutX="25.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="229.0" />
+            <Label fx:id="lblFormsName" layoutX="53.0" layoutY="25.0" text="Welcome !" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

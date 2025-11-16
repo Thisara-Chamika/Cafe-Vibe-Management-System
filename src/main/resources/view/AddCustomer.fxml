@@ -38,11 +38,11 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCustomerId" layoutX="33.0" layoutY="67.0" promptText="Customer ID" />
-      <JFXTextField fx:id="txtCustomerName" layoutX="252.0" layoutY="68.0" promptText="Customer Name" />
-      <JFXTextField fx:id="txtCustomerAddress" layoutX="33.0" layoutY="138.0" promptText="Customer Address" />
-      <JFXTextField fx:id="txtMobileNumber" layoutX="252.0" layoutY="139.0" promptText="Mobile Number" />
-      <JFXTextField fx:id="txtCustomerEmail" layoutX="33.0" layoutY="205.0" prefHeight="25.0" prefWidth="264.0" promptText="Customer Email" />
+      <JFXTextField fx:id="txtCustomerId" focusColor="BLACK" layoutX="33.0" layoutY="67.0" promptText="Customer ID" />
+      <JFXTextField fx:id="txtCustomerName" focusColor="BLACK" layoutX="252.0" layoutY="68.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="BLACK" layoutX="33.0" layoutY="138.0" promptText="Customer Address" />
+      <JFXTextField fx:id="txtMobileNumber" focusColor="BLACK" layoutX="252.0" layoutY="139.0" promptText="Mobile Number" />
+      <JFXTextField fx:id="txtCustomerEmail" focusColor="BLACK" layoutX="33.0" layoutY="205.0" prefHeight="25.0" prefWidth="264.0" promptText="Customer Email" />
       <JFXButton layoutX="460.0" layoutY="57.0" onAction="#btnAddCustomerOnAction" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #793c20;" text="ADD" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="12.0" />
